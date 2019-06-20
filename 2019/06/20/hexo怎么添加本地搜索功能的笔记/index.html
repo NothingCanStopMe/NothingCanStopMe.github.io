@@ -56,10 +56,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/image/avatar.jpeg?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/image/avatar.jpeg?v=5.1.4">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="龙中之马的博客">
 <meta property="og:description" content="在blog主文件夹内将searchdb插件安装进来 npm install hexo-generator-searchdb –save mac下如果出现gym错误 access deny错误的话, 在blog主文件夹内运行 sudo chown -R $USER ./ 目的是将blog的归属改为当前用户, 当前用户拥有归属权的时候就不会出现权限问题 在站点配置文件_config.yml文件下添加">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-20T08:34:13.000Z">
+<meta property="og:updated_time" content="2019-06-20T08:54:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo怎么添加本地搜索功能">
 <meta name="twitter:description" content="在blog主文件夹内将searchdb插件安装进来 npm install hexo-generator-searchdb –save mac下如果出现gym错误 access deny错误的话, 在blog主文件夹内运行 sudo chown -R $USER ./ 目的是将blog的归属改为当前用户, 当前用户拥有归属权的时候就不会出现权限问题 在站点配置文件_config.yml文件下添加">
@@ -290,7 +290,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="龙中之马">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="image" content="/image/avatar.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -366,7 +366,7 @@
 <li>在blog主文件夹内将searchdb插件安装进来 npm install hexo-generator-searchdb –save</li>
 <li>mac下如果出现gym错误 access deny错误的话, 在blog主文件夹内运行<br> sudo chown -R $USER ./<br> 目的是将blog的归属改为当前用户, 当前用户拥有归属权的时候就不会出现权限问题</li>
 <li>在站点配置文件_config.yml文件下添加<br> search:<br>   path: search.xml<br>   field: post<br>   format: html<br>   limit: 10000<br>   目的是在public文件夹内生成search.xml文件, 将所有发不过的文件形成链接放入search.xml内, 这样子就有了搜索的能力</li>
-<li>在主题配置文件_config.yml文件内找到<br> local_search:<br> enable: false<br> trigger: auto<br> top_n_per_article: 1<br> 将false改为true, 如果本来就是true就做理会, 如果没有上面这段代码就添加上去<br> 由于页面配置原因, 就不想注释的部分贴进来了, 请自行脑补</li>
+<li>在主题配置文件_config.yml文件内找到<br> local_search:<br> enable: false<br> trigger: auto<br> top_n_per_article: 1<br> 将false改为true, 如果本来就是true就做理会, 如果没有上面这段代码就添加上去<br> 由于页面配置原因, 就不把注释的部分贴进来了, 请自行脑补</li>
 <li>在blog主文件内执行一次 hexo g 这样子你的博客就拥有了本地搜索功能了</li>
 </ol>
 
@@ -439,7 +439,40 @@
 
       
       
-    </footer>
+
+      <div> 
+      
+    <div>
+      <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv" style="display:none">
+          本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+          <span class="post-meta-divider">|</span>
+      </span>
+      <span id="busuanzi_container_site_uv" style="display:none">
+          有<span id="busuanzi_value_site_uv"></span>人看过我的博客啦
+      </span>
+    </div>
+
+    <div>    
+      
+      
+        <ul class="post-copyright">
+        <li class="post-copyright-author">
+            <strong>本文作者：</strong>龙中之马
+        </li>
+        <li class="post-copyright-link">
+          <strong>本文链接：</strong>
+          <a href="/2019/06/20/hexo怎么添加本地搜索功能的笔记/" title="hexo怎么添加本地搜索功能">2019/06/20/hexo怎么添加本地搜索功能的笔记/</a>
+        </li>
+        <li class="post-copyright-license">
+          <strong>版权： </strong>
+          本站文章均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 CN</a> 许可协议，请勿用于商业，转载注明出处！
+        </li>
+        </ul>
+      
+    </div>
+
+    </div></footer>
   </div>
   
   
@@ -498,7 +531,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/avatar.jpeg" alt="龙中之马">
+              <img class="site-author-image" itemprop="image" src="/image/avatar.jpeg" alt="龙中之马">
             
               <p class="site-author-name" itemprop="name">龙中之马</p>
               <p class="site-description motion-element" itemprop="description"></p>
