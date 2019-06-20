@@ -11,7 +11,7 @@
   <entry>
     <title><![CDATA[关于hexo怎么建立分配和标签的笔记]]></title>
     <url>%2F2019%2F06%2F20%2F%E5%85%B3%E4%BA%8Ehexo%E6%80%8E%E4%B9%88%E5%BB%BA%E7%AB%8B%E5%88%86%E9%85%8D%E5%92%8C%E6%A0%87%E7%AD%BE%E7%9A%84%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[站点配置文件中将language改为zh-Hans(因为我的主题里面的中文样式是这个) 主题配置文件中将language改为zh-Hans 主题配置文件中在menu: 选项内把home(主页) tags(标签) categories(分配) archives(归档) 前面的#去掉 在blog主文件下 hexo new page tags (这样就新建了标签分页) 在blog主文件下 hexo new page categories (这样子就新建了分配分页) 这样子你就有了各个分页的功能 目前来说主页和各个分页的内容都存放在_posts文件夹内]]></content>
+    <content type="text"><![CDATA[站点配置文件中将language改为zh-Hans(因为我的主题里面的中文样式是这个) 主题配置文件中将language改为zh-Hans 主题配置文件中在menu: 选项内把home(主页) tags(标签) categories(分配) archives(归档) 前面的#去掉 在blog主文件下 hexo new page tags (这样就新建了标签分页) 在blog主文件下 hexo new page categories (这样子就新建了分类分页) 这样子你就有了各个分页的功能 目前来说主页和各个分页的内容都存放在_posts文件夹内]]></content>
       <tags>
         <tag>笔记</tag>
       </tags>
