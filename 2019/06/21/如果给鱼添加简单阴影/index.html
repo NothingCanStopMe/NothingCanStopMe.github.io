@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="捕鱼项目里, 竟然应策划需求要添加一个简单的阴影因为我们项目里面鱼是2d的, 理论上在鱼的底下添加一个同外形的黑色的鱼就可以达到这个效果基于此思路, 在鱼的文件内添加一个 schduler 每0.2秒执行一遍渲染给过下面是代码: 1234567891011121314151617181920function FishBase:initShadowUpdate()	self.shadowSp = c">
+<meta name="description" content="捕鱼项目里, 竟然应策划需求要添加一个简单的阴影因为我们项目里面鱼是2d的, 理论上在鱼的底下添加一个同外形的黑色的鱼就可以达到这个效果基于此思路, 在鱼的文件内添加一个 schduler 每0.2秒执行一遍渲染下面是代码: 1234567891011121314151617181920function FishBase:initShadowUpdate()	self.shadowSp = cc.">
 <meta name="keywords" content="笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如果给鱼添加简单阴影">
 <meta property="og:url" content="http://yoursite.com/2019/06/21/如果给鱼添加简单阴影/index.html">
 <meta property="og:site_name" content="龙中之马的博客">
-<meta property="og:description" content="捕鱼项目里, 竟然应策划需求要添加一个简单的阴影因为我们项目里面鱼是2d的, 理论上在鱼的底下添加一个同外形的黑色的鱼就可以达到这个效果基于此思路, 在鱼的文件内添加一个 schduler 每0.2秒执行一遍渲染给过下面是代码: 1234567891011121314151617181920function FishBase:initShadowUpdate()	self.shadowSp = c">
+<meta property="og:description" content="捕鱼项目里, 竟然应策划需求要添加一个简单的阴影因为我们项目里面鱼是2d的, 理论上在鱼的底下添加一个同外形的黑色的鱼就可以达到这个效果基于此思路, 在鱼的文件内添加一个 schduler 每0.2秒执行一遍渲染下面是代码: 1234567891011121314151617181920function FishBase:initShadowUpdate()	self.shadowSp = cc.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-21T01:35:40.000Z">
+<meta property="og:updated_time" content="2019-06-21T02:08:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如果给鱼添加简单阴影">
-<meta name="twitter:description" content="捕鱼项目里, 竟然应策划需求要添加一个简单的阴影因为我们项目里面鱼是2d的, 理论上在鱼的底下添加一个同外形的黑色的鱼就可以达到这个效果基于此思路, 在鱼的文件内添加一个 schduler 每0.2秒执行一遍渲染给过下面是代码: 1234567891011121314151617181920function FishBase:initShadowUpdate()	self.shadowSp = c">
+<meta name="twitter:description" content="捕鱼项目里, 竟然应策划需求要添加一个简单的阴影因为我们项目里面鱼是2d的, 理论上在鱼的底下添加一个同外形的黑色的鱼就可以达到这个效果基于此思路, 在鱼的文件内添加一个 schduler 每0.2秒执行一遍渲染下面是代码: 1234567891011121314151617181920function FishBase:initShadowUpdate()	self.shadowSp = cc.">
 
 
 
@@ -362,7 +362,7 @@
       
 
       
-        <p>捕鱼项目里, 竟然应策划需求要添加一个简单的阴影<br>因为我们项目里面鱼是2d的, 理论上在鱼的底下添加一个同外形的黑色的鱼就可以达到这个效果<br>基于此思路, 在鱼的文件内添加一个 schduler 每0.2秒执行一遍渲染给过<br>下面是代码:</p>
+        <p>捕鱼项目里, 竟然应策划需求要添加一个简单的阴影<br>因为我们项目里面鱼是2d的, 理论上在鱼的底下添加一个同外形的黑色的鱼就可以达到这个效果<br>基于此思路, 在鱼的文件内添加一个 schduler 每0.2秒执行一遍渲染<br>下面是代码:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">function FishBase:initShadowUpdate()</span><br><span class="line">	self.shadowSp = cc.Sprite:create()</span><br><span class="line">	self.shadowSp:initWithSpriteFrameName(&quot;fishFrameName.png&quot;) -- 自行添加自己鱼的frameName</span><br><span class="line">	self.shadowSp:setBlendFunc(cc.blendFunc(GL_ZERO, GL_ONE_MINUS_SRC_ALPHA)) -- 这个地方自行百度</span><br><span class="line">	self.shadowSp:setOpacity(150)</span><br><span class="line">	self.shadowSp:setPosition(cc.p(-10, 0))</span><br><span class="line">	self.shadowSp:addTo(self, -1)</span><br><span class="line">	self.shadowSp:scheduleUpdateWithPriorityLua(handler(self, self.shadowUpdate), 0.1)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function FishBase:shadowUpdate(dt)</span><br><span class="line">	self.shadowSp:initWithSpriteFrame(self.aniSp:getSpriteFrame()) -- self.aniSp 为鱼的sprite</span><br><span class="line">	self.shadowSp:setOpacity(150) --这里必须先设置不透明度, 不然setBlendFunc之后不再渲染透明度</span><br><span class="line">	self.shadowSp:setBlendFunc(cc.blendFunc(GL_ZERO, GL_ONE_MINUS_SRC_ALPHA))</span><br><span class="line"></span><br><span class="line">	-- 这里的计算是假设光源在右边, 且是方向光</span><br><span class="line">	local x = math.sin(math.rad(self:getRotation() - 90)) * 15</span><br><span class="line">	local y = - math.cos(math.rad(self:getRotation() - 90)) * 15</span><br><span class="line">	self.shadowSp:setPosition(cc.p(x, y))</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 
 <p>用setBlendFunc比直接用opengl更简单一些, 不需要自己写opengl文件, 直接混色就能达到要求了</p>
@@ -429,6 +429,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/21/给鱼添加简单阴影第二种方法/" rel="prev" title="给鱼添加简单阴影第二种方法">
+                给鱼添加简单阴影第二种方法 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -541,7 +545,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
