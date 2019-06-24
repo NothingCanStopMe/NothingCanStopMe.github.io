@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[快速排序算法的lua实现]]></title>
+    <url>%2F2019%2F06%2F24%2F%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84lua%E5%AE%9E%E7%8E%B0%2F</url>
+    <content type="text"><![CDATA[1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556-- 快速排序算法的实现--[[ 设要排序的数组是A[0]……A[N-1]，首先任意选取一个数据（通常选用数组的第一个数）作为关键数据，然后将所有比它小的数都放到它左边，所有比它大的数都放到它右边，这个过程称为一趟快速排序。值得注意的是，快速排序不是一种稳定的排序算法，也就是说，多个相同的值的相对位置也许会在算法结束时产生变动。 一趟快速排序的算法是： 1）设置两个变量i、j，排序开始的时候：i=1，j=N-1； 2）以第一个数组元素作为关键数据，赋值给key，即key=A[0]； 3）从j开始向前搜索，即由后开始向前搜索(j--)，找到第一个小于key的值A[j] 4）从i开始向后搜索，即由前开始向后搜索(i++)，找到第一个大于key的A[i] 5) 将A[j]与A[i]的值互换 6）重复第3、4、5步，直到i=j； (3,4步中，没找到符合条件的值，即3中A[j]不小于key,4中A[i]不大于key的时候改变j、i的值，使得j=j-1，i=i+1，直至找到为止。找到符合条件的值，进行交换的时候i， j指针位置不变。另外，i==j这一过程一定正好是i+或j-完成的时候，此时令循环结束）。]]function Qsort(tab, left, right) if right &lt;= left then return end local i = left + 1 local j = right local key = tab[left] while true do -- 从左往右找比key大的值 while (tab[i] &lt; key) do i = i + 1 if i == right then break end end -- 从右往左找比key小的值 while (tab[j] &gt; key) do j = j - 1 if j == left then break end end if i &gt;= j then break end local tmp = tab[i] tab[i] = tab[j] tab[j] = tmp end tab[left] = tab[j] tab[j] = key Qsort(tab, left, j - 1) Qsort(tab, j + 1, right)endlocal tab = &#123;6,2,7,3,8,9&#125;-- local tab = &#123;5, 4, 3, 2, 1&#125;Qsort(tab, 1, #tab)for k,v in ipairs(tab) do print(k,v)end]]></content>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[给鱼添加简单阴影第二种方法]]></title>
     <url>%2F2019%2F06%2F21%2F%E7%BB%99%E9%B1%BC%E6%B7%BB%E5%8A%A0%E7%AE%80%E5%8D%95%E9%98%B4%E5%BD%B1%E7%AC%AC%E4%BA%8C%E7%A7%8D%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[直接采用renderTexture实现, 只是阴影没有层次的区别, 适合静态使用 123456789101112131415161718192021222324252627282930local ShadowLayer = class(&quot;ShadowLayer&quot;, ccui.Layout)function ShadowLayer:ctor(target, root) self.target = target local size = cc.Director:getInstance():getWinSize() self:setContentSize(cc.size(size.width, size.height)) self:setAnchorPoint(cc.p(0,0)) self:setPosition(cc.p(-15, 0)) self.pRender = cc.RenderTexture:create(size.width, size.height, cc.TEXTURE2_D_PIXEL_FORMAT_RGB_A8888) self.pRender:setPosition(cc.p(size.width / 2, size.height / 2)) self.pRender:getSprite():setBlendFunc(cc.blendFunc(GL_ZERO, GL_ONE_MINUS_SRC_ALPHA)) self.pRender:getSprite():setOpacity(150) self.pRender:addTo(self) self.pRender:retain() self:scheduleUpdateWithPriorityLua(handler(self, self.update), 0.1)endfunction ShadowLayer:update(dt) self.pRender:clear(0, 0, 0, 0) self.pRender:begin() self.target:visit() self.pRender:endToLua()endfunction ShadowLayer:setShadowColor(color) self.pRender:clear(color.r, color.g, color.b, color.a)endreturn ShadowLayer 原理是将鱼的layer渲染到renderTexture下, 然后改变renderTexture内的sprite的混色方案, 得到黑色阴影 只是有个bug, 会闪退, 由于本人对opengl研究较少, 暂时没查出什么问题 慎用此方法]]></content>
