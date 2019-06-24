@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[时间复杂度与空间复杂度的个人见解]]></title>
+    <url>%2F2019%2F06%2F24%2F%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%A7%81%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[最近在回顾大学时代算法导论说的空间复杂度与实践复杂度问题, 今天偶有所悟, 写下来防止以后忘记也好. 时间复杂度: 按照百度百科的说法是 定型的描述一个算法的运行时间, 用O()来表示 其实嘛, 直接常规来计算就是这个算法里面进行了几次计算, 比如单纯的 local a = tab[1], 就是一次 for k,v in ipairs(tab) do local a = v end 就是n(n = #tab) 次, for k,v in ipairs(tab) do for key, value in ipairs(v) do local a = value end end 就是n²(#tab * #v)次 这样子一看 就通俗易懂很多了… 代码进行了几次运算就有, 总运算次数能用哪类函数来表示, 就是写为O(1) O(nlgn) O(n²) O(n³)的空间复杂度 运行时间 O(1) &lt; O(n) &lt; O(nlgn) &lt; O(n²) &lt; O(n³) &lt; O(n!) , 越靠后运行时间越长, 算法效率越低 “一套图 搞懂“时间复杂度”]]></content>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[归并排序算法的lua实现]]></title>
     <url>%2F2019%2F06%2F24%2F%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84lua%E5%AE%9E%E7%8E%B0%2F</url>
     <content type="text"><![CDATA[12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758-- 归并排序算法学习--[[ 1. 设置临时table, 用来存放排序之后的数组 2. 设定两个值i,j, 初始值分别为两个待排序数组的第一个key 3. 比较key为i,j对应的值, 较小的放入合并空间, 并移动到下一个值 4. 重复步骤3到i,j其中一个超出数组最大值 5. 将另一个数组的剩下的元素复制到临时table中]]function merge(sourTab, tmpTab, startIndex, midIndex, endIndex) local i = startIndex local j = midIndex + 1 local k = startIndex while(i &lt;= midIndex and j &lt;= endIndex) do if sourTab[i] &gt; sourTab[j] then tmpTab[k] = sourTab[j] j = j + 1 else tmpTab[k] = sourTab[i] i = i + 1 end k = k + 1 end -- 将剩下的拼到临时table的末尾 理论上i, j只有一个剩下 while (i &lt;= midIndex) do tmpTab[k] = sourTab[i] k = k + 1 i = i + 1 end -- 将剩下的拼到临时table的末尾 while (j &lt;= endIndex) do tmpTab[k] = sourTab[j] k = k + 1 j = j + 1 end -- 将排序好的数组赋值回原table, 这一步不能省略 for i = startIndex, endIndex do sourTab[i] = tmpTab[i] endendfunction mergeSort(sourTab, tmpTab, startIndex, endIndex) if startIndex &lt; endIndex then local midIndex = startIndex + math.floor((endIndex - startIndex) / 2) mergeSort(sourTab, tmpTab, startIndex, midIndex) mergeSort(sourTab, tmpTab, midIndex + 1, endIndex) merge(sourTab, tmpTab, startIndex, midIndex, endIndex) endendlocal tab = &#123;50, 10, 20, 30, 70, 40, 80, 60&#125;local tab1 = &#123;&#125;mergeSort(tab, tab1, 1, #tab)print(table.concat(tab, &quot;,&quot;)) 参考百度百科]]></content>
