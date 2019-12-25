@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="最近在做捕鱼项目的时候, 总为房间内cpu占用率过高而烦恼, cpu占用率甚至达到了60%, 着手优化这部分内容重中之重为了优化代码 减少cpu占用率 采用以下流程检查代码那部分导致cpu占用率增加  在 config.lua 文件内将 CC_SHOW_FPS 设置为 true , 显示整个游戏的GL verts(当前页面顶点数), GL call(每帧调用OpenGl次数), FPS(帧率) 1">
+<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758-- 归并排序算法学习--[[	1. 设置临时table, 用来存放排序之后的数组	2. 设定两个值i,j, 初始值分别为两个待排序数组的第一个key	3. 比较key为i,j对应的值,">
 <meta name="keywords" content="笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="捕鱼项目减少cpu占用的优化方案总结">
-<meta property="og:url" content="http://yoursite.com/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/index.html">
+<meta property="og:title" content="归并排序算法的lua实现">
+<meta property="og:url" content="http://yoursite.com/2019/06/24/归并排序算法的lua实现/index.html">
 <meta property="og:site_name" content="龙中之马的博客">
-<meta property="og:description" content="最近在做捕鱼项目的时候, 总为房间内cpu占用率过高而烦恼, cpu占用率甚至达到了60%, 着手优化这部分内容重中之重为了优化代码 减少cpu占用率 采用以下流程检查代码那部分导致cpu占用率增加  在 config.lua 文件内将 CC_SHOW_FPS 设置为 true , 显示整个游戏的GL verts(当前页面顶点数), GL call(每帧调用OpenGl次数), FPS(帧率) 1">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758-- 归并排序算法学习--[[	1. 设置临时table, 用来存放排序之后的数组	2. 设定两个值i,j, 初始值分别为两个待排序数组的第一个key	3. 比较key为i,j对应的值,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-25T12:32:29.704Z">
+<meta property="og:updated_time" content="2019-06-24T03:11:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="捕鱼项目减少cpu占用的优化方案总结">
-<meta name="twitter:description" content="最近在做捕鱼项目的时候, 总为房间内cpu占用率过高而烦恼, cpu占用率甚至达到了60%, 着手优化这部分内容重中之重为了优化代码 减少cpu占用率 采用以下流程检查代码那部分导致cpu占用率增加  在 config.lua 文件内将 CC_SHOW_FPS 设置为 true , 显示整个游戏的GL verts(当前页面顶点数), GL call(每帧调用OpenGl次数), FPS(帧率) 1">
+<meta name="twitter:title" content="归并排序算法的lua实现">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758-- 归并排序算法学习--[[	1. 设置临时table, 用来存放排序之后的数组	2. 设定两个值i,j, 初始值分别为两个待排序数组的第一个key	3. 比较key为i,j对应的值,">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/24/归并排序算法的lua实现/">
 
 
 
 
 
-  <title>捕鱼项目减少cpu占用的优化方案总结 | 龙中之马的博客</title>
+  <title>归并排序算法的lua实现 | 龙中之马的博客</title>
   
 
 
@@ -285,7 +285,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/24/归并排序算法的lua实现/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="龙中之马">
@@ -302,7 +302,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">捕鱼项目减少cpu占用的优化方案总结</h1>
+          <h1 class="post-title" itemprop="name headline">归并排序算法的lua实现</h1>
         
 
         <div class="post-meta">
@@ -314,8 +314,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-21T09:09:42+08:00">
-                2019-06-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-24T11:10:17+08:00">
+                2019-06-24
               </time>
             
 
@@ -333,8 +333,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/21/捕鱼项目减少cpu占用的优化方案总结/" itemprop="commentCount"></span>
+                <a href="/2019/06/24/归并排序算法的lua实现/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/24/归并排序算法的lua实现/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -362,17 +362,9 @@
       
 
       
-        <p>最近在做捕鱼项目的时候, 总为房间内cpu占用率过高而烦恼, cpu占用率甚至达到了60%, 着手优化这部分内容重中之重<br>为了优化代码 减少cpu占用率 采用以下流程检查代码那部分导致cpu占用率增加</p>
-<ol>
-<li>在 config.lua 文件内将 CC_SHOW_FPS 设置为 true , 显示整个游戏的GL verts(当前页面顶点数), GL call(每帧调用OpenGl次数), FPS(帧率)<br> 1.1 MAC模拟器上GL verts 8000+, GL call 200+, FPS 58+<br> 1.2 理论上FPS 58+不影响游戏的流畅度, 但是GL verts 和 GL call 太高了, 需要优化</li>
-<li>经检查代码发现:<br>  2.1 为了实现鱼的可点击, 每条鱼身上都添加了一张白图作为点击对象<br>  2.2 为了实现光影效果, 每条鱼身上添加了一个 scheduler 每0.2秒渲染一个阴影到鱼的底下, <a href="https://nothingcanstopme.github.io/2019/06/21/如果给鱼添加简单阴影/" target="_blank" rel="noopener">(如果给鱼添加简单阴影)</a></li>
-<li>分析上面两个方案的弊端<br> 3.1 添加了白图作为点击对象, GL verts 增加了2000+<br> 3.2 添加了光影效果, GL verts 增加了2000+ GL call 增加了100+</li>
-<li>对这两方案进行优化<br> 4.1 由于鱼的碰撞采用的是cocos2dx 的物理世界(physicsWorld)的oncontactBegin方法, 那鱼的点击, 可以采用以下物理世界里面的getShape方法实现, 具体代码: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function xxx:onTouchEnded(touch, event)</span><br><span class="line">	local physicsWorld = cc.Director:getInstance():getRunningScene():getPhysicsWorld()</span><br><span class="line">	local shape = physicsWorld:getShape(touch:getLocation())</span><br><span class="line">	if shape then </span><br><span class="line">		local node = shape:getBody():getNode()</span><br><span class="line">		-- 这里获取到了当前点击的Node, 自行判断是否为鱼即可</span><br><span class="line">	end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
- getShape方法优先获取 最上层的shape(为了碰撞设置的多边形) 无需自行判断那条鱼在最上面.<br> 如果需要知道当前点击位置附近有多少条鱼, 建议采用getShapes(touch:getLocation())方法<br> 4.2 光影效果直接删掉或者给个按钮用户选择是否出现即可(浪费了我研究这么久)</li>
-<li>做完以上优化之后发现 Gl verts 还要3000+, 检查代码发现, 捕鱼的房间直接add到大厅上面的, 还需要将大厅setVisible(false)掉<br> 因为cocos2dx很多layer(layout)叠在一起时, 只要可见都会进行渲染, 凭空浪费cpu</li>
-</ol>
-<p><font size="3," color="red"> 结论: </font><br>做cpu优化时, 打开fps显示, 检查代码的哪一部分会导致 GL verts, GL call 升高, 并找替代方法, 可以达成目标</p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">-- 归并排序算法学习</span><br><span class="line">--[[</span><br><span class="line">	1. 设置临时table, 用来存放排序之后的数组</span><br><span class="line">	2. 设定两个值i,j, 初始值分别为两个待排序数组的第一个key</span><br><span class="line">	3. 比较key为i,j对应的值, 较小的放入合并空间, 并移动到下一个值</span><br><span class="line">	4. 重复步骤3到i,j其中一个超出数组最大值</span><br><span class="line">	5. 将另一个数组的剩下的元素复制到临时table中</span><br><span class="line">]]</span><br><span class="line">function merge(sourTab, tmpTab, startIndex, midIndex, endIndex)</span><br><span class="line">	local i = startIndex</span><br><span class="line">	local j = midIndex + 1</span><br><span class="line">	local k = startIndex</span><br><span class="line">	while(i &lt;= midIndex and j &lt;= endIndex) do</span><br><span class="line">		if sourTab[i] &gt; sourTab[j] then </span><br><span class="line">			tmpTab[k] = sourTab[j]</span><br><span class="line">			j = j + 1</span><br><span class="line">		else</span><br><span class="line">			tmpTab[k] = sourTab[i]</span><br><span class="line">			i = i + 1</span><br><span class="line">		end</span><br><span class="line">		k = k + 1</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	-- 将剩下的拼到临时table的末尾 理论上i, j只有一个剩下</span><br><span class="line">	while (i &lt;= midIndex) do</span><br><span class="line">		tmpTab[k] = sourTab[i]</span><br><span class="line">		k = k + 1</span><br><span class="line">		i = i + 1</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	-- 将剩下的拼到临时table的末尾</span><br><span class="line">	while (j &lt;= endIndex) do</span><br><span class="line">		tmpTab[k] = sourTab[j]</span><br><span class="line">		k = k + 1</span><br><span class="line">		j = j + 1</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	-- 将排序好的数组赋值回原table, 这一步不能省略</span><br><span class="line">	for i = startIndex, endIndex do</span><br><span class="line">		sourTab[i] = tmpTab[i]</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function mergeSort(sourTab, tmpTab, startIndex, endIndex)</span><br><span class="line">	if startIndex &lt; endIndex then </span><br><span class="line">		local midIndex = startIndex + math.floor((endIndex - startIndex) / 2)</span><br><span class="line">		mergeSort(sourTab, tmpTab, startIndex, midIndex)</span><br><span class="line">		mergeSort(sourTab, tmpTab, midIndex + 1, endIndex)</span><br><span class="line">		merge(sourTab, tmpTab, startIndex, midIndex, endIndex)</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">local tab = &#123;50, 10, 20, 30, 70, 40, 80, 60&#125;</span><br><span class="line">local tab1 = &#123;&#125;</span><br><span class="line">mergeSort(tab, tab1, 1, #tab)</span><br><span class="line">print(table.concat(tab, &quot;,&quot;))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<a href="https://baike.baidu.com/item/归并排序" target="_blank" rel="noopener">参考百度百科</a>
       
     </div>
     
@@ -426,8 +418,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/20/hexo怎么添加本地搜索功能的笔记/" rel="next" title="hexo怎么添加本地搜索功能">
-                <i class="fa fa-chevron-left"></i> hexo怎么添加本地搜索功能
+              <a href="/2019/06/24/快速排序算法的lua实现/" rel="next" title="快速排序算法的lua实现">
+                <i class="fa fa-chevron-left"></i> 快速排序算法的lua实现
               </a>
             
           </div>
@@ -436,8 +428,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/21/如果给鱼添加简单阴影/" rel="prev" title="如果给鱼添加简单阴影">
-                如果给鱼添加简单阴影 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/06/24/时间复杂度与空间复杂度的个人见解/" rel="prev" title="时间复杂度与空间复杂度的个人见解">
+                时间复杂度与空间复杂度的个人见解 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -469,7 +461,7 @@
         </li>
         <li class="post-copyright-link">
           <strong>本文链接：</strong>
-          <a href="/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/" title="捕鱼项目减少cpu占用的优化方案总结">2019/06/21/捕鱼项目减少cpu占用的优化方案总结/</a>
+          <a href="/2019/06/24/归并排序算法的lua实现/" title="归并排序算法的lua实现">2019/06/24/归并排序算法的lua实现/</a>
         </li>
         <li class="post-copyright-license">
           <strong>版权： </strong>
@@ -551,7 +543,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -767,9 +759,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/';
-          this.page.identifier = '2019/06/21/捕鱼项目减少cpu占用的优化方案总结/';
-          this.page.title = '捕鱼项目减少cpu占用的优化方案总结';
+          this.page.url = 'http://yoursite.com/2019/06/24/归并排序算法的lua实现/';
+          this.page.identifier = '2019/06/24/归并排序算法的lua实现/';
+          this.page.title = '归并排序算法的lua实现';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://longma.disqus.com/embed.js';

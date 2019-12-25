@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="最近在做捕鱼项目的时候, 总为房间内cpu占用率过高而烦恼, cpu占用率甚至达到了60%, 着手优化这部分内容重中之重为了优化代码 减少cpu占用率 采用以下流程检查代码那部分导致cpu占用率增加  在 config.lua 文件内将 CC_SHOW_FPS 设置为 true , 显示整个游戏的GL verts(当前页面顶点数), GL call(每帧调用OpenGl次数), FPS(帧率) 1">
+<meta name="description" content="最近在回顾大学时代算法导论说的空间复杂度与实践复杂度问题, 今天偶有所悟, 写下来防止以后忘记也好.  时间复杂度: 按照百度百科的说法是 定型的描述一个算法的运行时间, 用O()来表示 其实嘛, 直接常规来计算就是这个算法里面进行了几次计算, 比如单纯的 local a = tab[1], 就是一次 for k,v in ipairs(tab) do local a = v end 就是n(n">
 <meta name="keywords" content="笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="捕鱼项目减少cpu占用的优化方案总结">
-<meta property="og:url" content="http://yoursite.com/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/index.html">
+<meta property="og:title" content="时间复杂度与空间复杂度的个人见解">
+<meta property="og:url" content="http://yoursite.com/2019/06/24/时间复杂度与空间复杂度的个人见解/index.html">
 <meta property="og:site_name" content="龙中之马的博客">
-<meta property="og:description" content="最近在做捕鱼项目的时候, 总为房间内cpu占用率过高而烦恼, cpu占用率甚至达到了60%, 着手优化这部分内容重中之重为了优化代码 减少cpu占用率 采用以下流程检查代码那部分导致cpu占用率增加  在 config.lua 文件内将 CC_SHOW_FPS 设置为 true , 显示整个游戏的GL verts(当前页面顶点数), GL call(每帧调用OpenGl次数), FPS(帧率) 1">
+<meta property="og:description" content="最近在回顾大学时代算法导论说的空间复杂度与实践复杂度问题, 今天偶有所悟, 写下来防止以后忘记也好.  时间复杂度: 按照百度百科的说法是 定型的描述一个算法的运行时间, 用O()来表示 其实嘛, 直接常规来计算就是这个算法里面进行了几次计算, 比如单纯的 local a = tab[1], 就是一次 for k,v in ipairs(tab) do local a = v end 就是n(n">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-25T12:32:29.704Z">
+<meta property="og:updated_time" content="2019-06-24T08:38:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="捕鱼项目减少cpu占用的优化方案总结">
-<meta name="twitter:description" content="最近在做捕鱼项目的时候, 总为房间内cpu占用率过高而烦恼, cpu占用率甚至达到了60%, 着手优化这部分内容重中之重为了优化代码 减少cpu占用率 采用以下流程检查代码那部分导致cpu占用率增加  在 config.lua 文件内将 CC_SHOW_FPS 设置为 true , 显示整个游戏的GL verts(当前页面顶点数), GL call(每帧调用OpenGl次数), FPS(帧率) 1">
+<meta name="twitter:title" content="时间复杂度与空间复杂度的个人见解">
+<meta name="twitter:description" content="最近在回顾大学时代算法导论说的空间复杂度与实践复杂度问题, 今天偶有所悟, 写下来防止以后忘记也好.  时间复杂度: 按照百度百科的说法是 定型的描述一个算法的运行时间, 用O()来表示 其实嘛, 直接常规来计算就是这个算法里面进行了几次计算, 比如单纯的 local a = tab[1], 就是一次 for k,v in ipairs(tab) do local a = v end 就是n(n">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/24/时间复杂度与空间复杂度的个人见解/">
 
 
 
 
 
-  <title>捕鱼项目减少cpu占用的优化方案总结 | 龙中之马的博客</title>
+  <title>时间复杂度与空间复杂度的个人见解 | 龙中之马的博客</title>
   
 
 
@@ -285,7 +285,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/24/时间复杂度与空间复杂度的个人见解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="龙中之马">
@@ -302,7 +302,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">捕鱼项目减少cpu占用的优化方案总结</h1>
+          <h1 class="post-title" itemprop="name headline">时间复杂度与空间复杂度的个人见解</h1>
         
 
         <div class="post-meta">
@@ -314,8 +314,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-21T09:09:42+08:00">
-                2019-06-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-24T16:02:50+08:00">
+                2019-06-24
               </time>
             
 
@@ -333,8 +333,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/21/捕鱼项目减少cpu占用的优化方案总结/" itemprop="commentCount"></span>
+                <a href="/2019/06/24/时间复杂度与空间复杂度的个人见解/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/24/时间复杂度与空间复杂度的个人见解/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -362,17 +362,18 @@
       
 
       
-        <p>最近在做捕鱼项目的时候, 总为房间内cpu占用率过高而烦恼, cpu占用率甚至达到了60%, 着手优化这部分内容重中之重<br>为了优化代码 减少cpu占用率 采用以下流程检查代码那部分导致cpu占用率增加</p>
+        <p>最近在回顾大学时代算法导论说的空间复杂度与实践复杂度问题, 今天偶有所悟, 写下来防止以后忘记也好.</p>
 <ol>
-<li>在 config.lua 文件内将 CC_SHOW_FPS 设置为 true , 显示整个游戏的GL verts(当前页面顶点数), GL call(每帧调用OpenGl次数), FPS(帧率)<br> 1.1 MAC模拟器上GL verts 8000+, GL call 200+, FPS 58+<br> 1.2 理论上FPS 58+不影响游戏的流畅度, 但是GL verts 和 GL call 太高了, 需要优化</li>
-<li>经检查代码发现:<br>  2.1 为了实现鱼的可点击, 每条鱼身上都添加了一张白图作为点击对象<br>  2.2 为了实现光影效果, 每条鱼身上添加了一个 scheduler 每0.2秒渲染一个阴影到鱼的底下, <a href="https://nothingcanstopme.github.io/2019/06/21/如果给鱼添加简单阴影/" target="_blank" rel="noopener">(如果给鱼添加简单阴影)</a></li>
-<li>分析上面两个方案的弊端<br> 3.1 添加了白图作为点击对象, GL verts 增加了2000+<br> 3.2 添加了光影效果, GL verts 增加了2000+ GL call 增加了100+</li>
-<li>对这两方案进行优化<br> 4.1 由于鱼的碰撞采用的是cocos2dx 的物理世界(physicsWorld)的oncontactBegin方法, 那鱼的点击, 可以采用以下物理世界里面的getShape方法实现, 具体代码: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function xxx:onTouchEnded(touch, event)</span><br><span class="line">	local physicsWorld = cc.Director:getInstance():getRunningScene():getPhysicsWorld()</span><br><span class="line">	local shape = physicsWorld:getShape(touch:getLocation())</span><br><span class="line">	if shape then </span><br><span class="line">		local node = shape:getBody():getNode()</span><br><span class="line">		-- 这里获取到了当前点击的Node, 自行判断是否为鱼即可</span><br><span class="line">	end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
- getShape方法优先获取 最上层的shape(为了碰撞设置的多边形) 无需自行判断那条鱼在最上面.<br> 如果需要知道当前点击位置附近有多少条鱼, 建议采用getShapes(touch:getLocation())方法<br> 4.2 光影效果直接删掉或者给个按钮用户选择是否出现即可(浪费了我研究这么久)</li>
-<li>做完以上优化之后发现 Gl verts 还要3000+, 检查代码发现, 捕鱼的房间直接add到大厅上面的, 还需要将大厅setVisible(false)掉<br> 因为cocos2dx很多layer(layout)叠在一起时, 只要可见都会进行渲染, 凭空浪费cpu</li>
-</ol>
-<p><font size="3," color="red"> 结论: </font><br>做cpu优化时, 打开fps显示, 检查代码的哪一部分会导致 GL verts, GL call 升高, 并找替代方法, 可以达成目标</p>
+<li><p>时间复杂度:<br> 按照百度百科的说法是 定型的描述一个算法的运行时间, 用O()来表示<br> 其实嘛, 直接常规来计算就是这个算法里面进行了几次计算, 比如单纯的 local a = tab[1], 就是一次<br> for k,v in ipairs(tab) do</p>
+<pre><code>local a = v</code></pre><p> end<br> 就是n(n = #tab) 次,<br> for k,v in ipairs(tab) do</p>
+<pre><code>for key, value in ipairs(v) do
+    local a = value
+end</code></pre><p> end<br> 就是n²(#tab * #v)次<br> 这样子一看 就通俗易懂很多了… 代码进行了几次运算就有, 总运算次数能用哪类函数来表示, 就是写为O(1) O(nlgn) O(n²) O(n³)的空间复杂度<br> 运行时间 O(1) &lt; O(n) &lt; O(nlgn) &lt; O(n²) &lt; O(n³) &lt; O(n!) , 越靠后运行时间越长, 算法效率越低<br> <a href="href=https://blog.csdn.net/qq_41523096/article/details/82142747}>https://blog.csdn.net/qq_41523096/article/details/82142747}</a></p>" title="</li> <li><p>空间复杂度<br> 空间复杂度是描述算法需要额外占用的空间<br> 比如:<br> function test()</p> <pre><code>local a = nil
+for k,v in ipairs(tab) do
+    a = v
+end
 
+return a</code></pre><p> end<br> 需要额外开辟k,v a 三个变量空间, 并且这三个变量空间并不随着tab的大小增长而增长 记为3 * 1, 省略系数就是S(1)<br> 只是嘛, 现在的手机和电脑的内存空间都增长的相当的快, 空间复杂度一向不是最先考虑的问题</p> </li> </ol>">“一套图 搞懂“时间复杂度” <a< a></a<></a></p></li></ol>
       
     </div>
     
@@ -426,8 +427,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/20/hexo怎么添加本地搜索功能的笔记/" rel="next" title="hexo怎么添加本地搜索功能">
-                <i class="fa fa-chevron-left"></i> hexo怎么添加本地搜索功能
+              <a href="/2019/06/24/归并排序算法的lua实现/" rel="next" title="归并排序算法的lua实现">
+                <i class="fa fa-chevron-left"></i> 归并排序算法的lua实现
               </a>
             
           </div>
@@ -435,10 +436,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/06/21/如果给鱼添加简单阴影/" rel="prev" title="如果给鱼添加简单阴影">
-                如果给鱼添加简单阴影 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -469,7 +466,7 @@
         </li>
         <li class="post-copyright-link">
           <strong>本文链接：</strong>
-          <a href="/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/" title="捕鱼项目减少cpu占用的优化方案总结">2019/06/21/捕鱼项目减少cpu占用的优化方案总结/</a>
+          <a href="/2019/06/24/时间复杂度与空间复杂度的个人见解/" title="时间复杂度与空间复杂度的个人见解">2019/06/24/时间复杂度与空间复杂度的个人见解/</a>
         </li>
         <li class="post-copyright-license">
           <strong>版权： </strong>
@@ -551,7 +548,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -767,9 +764,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2019/06/21/捕鱼项目减少cpu占用的优化方案总结/';
-          this.page.identifier = '2019/06/21/捕鱼项目减少cpu占用的优化方案总结/';
-          this.page.title = '捕鱼项目减少cpu占用的优化方案总结';
+          this.page.url = 'http://yoursite.com/2019/06/24/时间复杂度与空间复杂度的个人见解/';
+          this.page.identifier = '2019/06/24/时间复杂度与空间复杂度的个人见解/';
+          this.page.title = '时间复杂度与空间复杂度的个人见解';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://longma.disqus.com/embed.js';
