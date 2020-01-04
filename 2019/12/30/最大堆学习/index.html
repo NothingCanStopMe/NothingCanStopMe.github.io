@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="笔记,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="龙中之马的博客">
-<meta property="og:url" content="http://yoursite.com/tags/随感/index.html">
+<meta name="description" content="二叉堆特性:   子节点的值比父节点的值小 左节点的索引值为父节点的两倍 右节点的索引值为父节点的两倍 + 1 必须是一个完全二叉树, (节点集中在左侧) 二叉堆的主要特性表现为最大堆  缺点:只有堆顶的数据是固定最大的, 叶节点的数据大小无法预计 最大堆的代码: 1234567891011121314151617181920212223242526272829303132333435363738">
+<meta name="keywords" content="笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="二叉堆学习之最大堆">
+<meta property="og:url" content="http://yoursite.com/2019/12/30/最大堆学习/index.html">
 <meta property="og:site_name" content="龙中之马的博客">
+<meta property="og:description" content="二叉堆特性:   子节点的值比父节点的值小 左节点的索引值为父节点的两倍 右节点的索引值为父节点的两倍 + 1 必须是一个完全二叉树, (节点集中在左侧) 二叉堆的主要特性表现为最大堆  缺点:只有堆顶的数据是固定最大的, 叶节点的数据大小无法预计 最大堆的代码: 1234567891011121314151617181920212223242526272829303132333435363738">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-01-04T14:17:48.054Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="龙中之马的博客">
+<meta name="twitter:title" content="二叉堆学习之最大堆">
+<meta name="twitter:description" content="二叉堆特性:   子节点的值比父节点的值小 左节点的索引值为父节点的两倍 右节点的索引值为父节点的两倍 + 1 必须是一个完全二叉树, (节点集中在左侧) 二叉堆的主要特性表现为最大堆  缺点:只有堆顶的数据是固定最大的, 叶节点的数据大小无法预计 最大堆的代码: 1234567891011121314151617181920212223242526272829303132333435363738">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/随感/">
+  <link rel="canonical" href="http://yoursite.com/2019/12/30/最大堆学习/">
 
 
 
 
 
-  <title>标签: 随感 | 龙中之马的博客</title>
+  <title>二叉堆学习之最大堆 | 龙中之马的博客</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -266,52 +271,227 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>随感<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/30/最大堆学习/">
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/06/20/第一篇随感/" itemprop="url">
-              
-                <span itemprop="name">第一篇随感</span>
-              
-            </a>
-        
-      </h2>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="龙中之马">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/image/avatar.jpeg">
+    </span>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-20T10:12:09+08:00" content="2019-06-20">
-          06-20
-        </time>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="龙中之马的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">二叉堆学习之最大堆</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-30T15:40:08+08:00">
+                2019-12-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/12/30/最大堆学习/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/12/30/最大堆学习/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>二叉堆<br>特性: </p>
+<ol>
+<li>子节点的值比父节点的值小</li>
+<li>左节点的索引值为父节点的两倍</li>
+<li>右节点的索引值为父节点的两倍 + 1</li>
+<li>必须是一个完全二叉树, (节点集中在左侧)</li>
+<li>二叉堆的主要特性表现为最大堆</li>
+</ol>
+<p>缺点:<br>只有堆顶的数据是固定最大的, 叶节点的数据大小无法预计</p>
+<p>最大堆的代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">local MaxHeap = &#123;&#125;</span><br><span class="line"></span><br><span class="line">function MaxHeap:ctor()</span><br><span class="line">    -- 数据</span><br><span class="line">    self.data = &#123;&#125;</span><br><span class="line">    -- 内部元素个数</span><br><span class="line">    self.count = 0</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 用一个数组来初始化</span><br><span class="line">function MaxHeap:initByArr(arr)</span><br><span class="line">    self:ctor()</span><br><span class="line">    for k,v in ipairs(arr) do</span><br><span class="line">        self.count = self.count + 1</span><br><span class="line">        self.data[self.count] = v</span><br><span class="line">    end</span><br><span class="line">    </span><br><span class="line">    -- 从倒数第二层开始进行下沉操作</span><br><span class="line">    for i = math.floor(self.count / 2), 1, -1 do</span><br><span class="line">        self:shiftDown(i)</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 下沉操作(将这个值往下层比较, 找到最合适它待的层数)</span><br><span class="line">function MaxHeap:shiftDown(k)</span><br><span class="line">    -- 还有下一层</span><br><span class="line">    while( 2 * k &lt;= self.count) do</span><br><span class="line">		local j = 2 *k</span><br><span class="line">		-- 判断最后一个叶结点是不是右结点</span><br><span class="line">		-- 如果是右节点那就+1 不是就原来的</span><br><span class="line">		if (j + 1 &lt;= self.count and self.data[j + 1] &gt; self.data[j]) then </span><br><span class="line">			j = j + 1</span><br><span class="line">		end</span><br><span class="line"></span><br><span class="line">		-- 是否满足下沉条件, 父结点比子节点大</span><br><span class="line">		if (self.data[k] &gt;= self.data[j]) then </span><br><span class="line">			break</span><br><span class="line">		end</span><br><span class="line"></span><br><span class="line">		local tmp = self.data[k]</span><br><span class="line">		self.data[k] = self.data[j]</span><br><span class="line">		self.data[j] = tmp</span><br><span class="line">		k = j</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 上浮操作(不断的与父结点比较, 直到到达根节点或者比父结点小才停止)</span><br><span class="line">function MaxHeap:shiftUp(k)</span><br><span class="line">    while(k &gt;= 1 and self.data[math.floor(k / 2)] &lt; self.data[k]) do</span><br><span class="line">        local tmp = self.data[math.floor(k / 2)]</span><br><span class="line">        self.data[math.floor(k / 2)] = self.data[k]</span><br><span class="line">        self.data[k] = tmp</span><br><span class="line">        k = math.floor(k / 2)</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 插入一个元素</span><br><span class="line">function MaxHeap:insert(item)</span><br><span class="line">    self.count = self.count + 1</span><br><span class="line">    self.data[self.count] = item</span><br><span class="line">    self:shiftUp(self.count)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 获取最大的元素, 或者也就是最大堆唯一能保证的特性啦</span><br><span class="line">function MaxHeap:getMaxItem()</span><br><span class="line">    return self.data[1]</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 获取元素个数</span><br><span class="line">function MaxHeap:size()</span><br><span class="line">    return self.count</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 判断二叉堆是否为空</span><br><span class="line">function MaxHeap:isEmpty()</span><br><span class="line">    return self.count == 0</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 取出堆顶</span><br><span class="line">function MaxHeap:extractMax()</span><br><span class="line">    local ret = self.data[1]</span><br><span class="line">    local tmp = self.data[self.count]</span><br><span class="line">    self.data[self.count] = self.data[1]</span><br><span class="line">    self.data[1] = tmp</span><br><span class="line">    self.count = self.count - 1</span><br><span class="line"></span><br><span class="line">    self:shiftDown(1)</span><br><span class="line">    return ret</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function MaxHeap:printHeapData()</span><br><span class="line">    print(table.concat(self.data, &quot;,&quot;))</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 顺便添加点的测试代码</span><br><span class="line">local myMaxHeap = &#123;&#125;</span><br><span class="line">setmetatable(myMaxHeap, &#123;__index = MaxHeap&#125;)</span><br><span class="line">myMaxHeap:initByArr(&#123;1, 5, 3, 7, 9&#125;)</span><br><span class="line">myMaxHeap:printHeapData()</span><br><span class="line">print(myMaxHeap:getMaxItem())</span><br><span class="line">print(myMaxHeap:extractMax(), myMaxHeap:getMaxItem())</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>十分感谢您的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/image/WechatIMG1.jpeg" alt="龙中之马 微信支付">
+        <p>微信支付</p>
       </div>
+    
 
-    </header>
-  </article>
+    
 
+    
 
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/12/25/二叉树算法学习一/" rel="next" title="二叉树算法学习一">
+                <i class="fa fa-chevron-left"></i> 二叉树算法学习一
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/01/04/A星算法学习笔记/" rel="prev" title="A星算法学习笔记">
+                A星算法学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+
+      <div> 
+
+    <div>
+      <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv" style="display:none">
+          本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+          <span class="post-meta-divider">|</span>
+      </span>
+      <span id="busuanzi_container_site_uv" style="display:none">
+          有<span id="busuanzi_value_site_uv"></span>人看过我的博客啦
+      </span>
+    </div>
+
+    <div>    
+      
+      
+        <ul class="post-copyright">
+        <li class="post-copyright-author">
+            <strong>本文作者：</strong>龙中之马
+        </li>
+        <li class="post-copyright-link">
+          <strong>本文链接：</strong>
+          <a href="/2019/12/30/最大堆学习/" title="二叉堆学习之最大堆">2019/12/30/最大堆学习/</a>
+        </li>
+        <li class="post-copyright-license">
+          <strong>版权： </strong>
+          本站文章均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 CN</a> 许可协议，请勿用于商业，转载注明出处！
+        </li>
+        </ul>
       
     </div>
 
+    </div></footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -319,6 +499,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -549,6 +743,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -566,6 +764,18 @@
       <script id="dsq-count-scr" src="https://longma.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2019/12/30/最大堆学习/';
+          this.page.identifier = '2019/12/30/最大堆学习/';
+          this.page.title = '二叉堆学习之最大堆';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://longma.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   

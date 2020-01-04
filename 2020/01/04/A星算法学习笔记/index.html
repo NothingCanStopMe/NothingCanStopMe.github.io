@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="站点配置文件中将language改为zh-Hans(因为我的主题里面的中文样式是这个) 主题配置文件中将language改为zh-Hans 主题配置文件中在menu: 选项内把home(主页) tags(标签) categories(分配) archives(归档) 前面的#去掉 在blog主文件下 hexo new page tags (这样就新建了标签分页) 在blog主文件下 hexo n">
+<meta name="description" content="简化搜索区域, 即栅格化起点与终点所在的区域并使之对应为平面坐标系, 确定搜索最大区域 遍历搜索区域, 建立open list(可走区域), closed list(不可走区域) 建立open list时, 将每个区域的 f(n) 参考量: = g(n) + h(n) g(n) 移动代价: 初始点移动到计算点的难易程度 比如上下左右移动为1 斜线运动为1.414 h(n) 移动距离:一般采用曼哈">
 <meta name="keywords" content="笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于hexo怎么建立分配和标签的笔记">
-<meta property="og:url" content="http://yoursite.com/2019/06/20/关于hexo怎么建立分配和标签的笔记/index.html">
+<meta property="og:title" content="A星算法学习笔记">
+<meta property="og:url" content="http://yoursite.com/2020/01/04/A星算法学习笔记/index.html">
 <meta property="og:site_name" content="龙中之马的博客">
-<meta property="og:description" content="站点配置文件中将language改为zh-Hans(因为我的主题里面的中文样式是这个) 主题配置文件中将language改为zh-Hans 主题配置文件中在menu: 选项内把home(主页) tags(标签) categories(分配) archives(归档) 前面的#去掉 在blog主文件下 hexo new page tags (这样就新建了标签分页) 在blog主文件下 hexo n">
+<meta property="og:description" content="简化搜索区域, 即栅格化起点与终点所在的区域并使之对应为平面坐标系, 确定搜索最大区域 遍历搜索区域, 建立open list(可走区域), closed list(不可走区域) 建立open list时, 将每个区域的 f(n) 参考量: = g(n) + h(n) g(n) 移动代价: 初始点移动到计算点的难易程度 比如上下左右移动为1 斜线运动为1.414 h(n) 移动距离:一般采用曼哈">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-25T12:32:29.584Z">
+<meta property="og:updated_time" content="2020-01-04T15:20:40.676Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于hexo怎么建立分配和标签的笔记">
-<meta name="twitter:description" content="站点配置文件中将language改为zh-Hans(因为我的主题里面的中文样式是这个) 主题配置文件中将language改为zh-Hans 主题配置文件中在menu: 选项内把home(主页) tags(标签) categories(分配) archives(归档) 前面的#去掉 在blog主文件下 hexo new page tags (这样就新建了标签分页) 在blog主文件下 hexo n">
+<meta name="twitter:title" content="A星算法学习笔记">
+<meta name="twitter:description" content="简化搜索区域, 即栅格化起点与终点所在的区域并使之对应为平面坐标系, 确定搜索最大区域 遍历搜索区域, 建立open list(可走区域), closed list(不可走区域) 建立open list时, 将每个区域的 f(n) 参考量: = g(n) + h(n) g(n) 移动代价: 初始点移动到计算点的难易程度 比如上下左右移动为1 斜线运动为1.414 h(n) 移动距离:一般采用曼哈">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/06/20/关于hexo怎么建立分配和标签的笔记/">
+  <link rel="canonical" href="http://yoursite.com/2020/01/04/A星算法学习笔记/">
 
 
 
 
 
-  <title>关于hexo怎么建立分配和标签的笔记 | 龙中之马的博客</title>
+  <title>A星算法学习笔记 | 龙中之马的博客</title>
   
 
 
@@ -285,7 +285,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/20/关于hexo怎么建立分配和标签的笔记/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/04/A星算法学习笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="龙中之马">
@@ -302,7 +302,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">关于hexo怎么建立分配和标签的笔记</h1>
+          <h1 class="post-title" itemprop="name headline">A星算法学习笔记</h1>
         
 
         <div class="post-meta">
@@ -314,8 +314,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-20T11:50:09+08:00">
-                2019-06-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-04T22:18:12+08:00">
+                2020-01-04
               </time>
             
 
@@ -333,8 +333,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/06/20/关于hexo怎么建立分配和标签的笔记/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/06/20/关于hexo怎么建立分配和标签的笔记/" itemprop="commentCount"></span>
+                <a href="/2020/01/04/A星算法学习笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/01/04/A星算法学习笔记/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -363,14 +363,16 @@
 
       
         <ol>
-<li>站点配置文件中将language改为zh-Hans(因为我的主题里面的中文样式是这个)</li>
-<li>主题配置文件中将language改为zh-Hans</li>
-<li>主题配置文件中在menu: 选项内把home(主页) tags(标签) categories(分配) archives(归档) 前面的#去掉</li>
-<li>在blog主文件下 hexo new page tags (这样就新建了标签分页)</li>
-<li>在blog主文件下 hexo new page categories (这样子就新建了分类分页)</li>
-<li>这样子你就有了各个分页的功能</li>
-<li>目前来说主页和各个分页的内容都存放在_posts文件夹内</li>
+<li>简化搜索区域, 即栅格化起点与终点所在的区域并使之对应为平面坐标系, 确定搜索最大区域</li>
+<li>遍历搜索区域, 建立open list(可走区域), closed list(不可走区域)</li>
+<li>建立open list时, 将每个区域的<br> f(n) 参考量: = g(n) + h(n)<br> g(n) 移动代价: 初始点移动到计算点的难易程度 比如上下左右移动为1 斜线运动为1.414<br> h(n) 移动距离:一般采用曼哈顿距离计算方式, 即<br> 计算好                                                                                                                      </li>
+<li>开始搜索<br> 4.1 确定第一个计算点, 通常为初始点<br> 4.2 将计算点与计算点周围的点放入openlist内<br> 4.3 遍历计算点周围的点, 找出f(参考量)最小的点为下一个计算点<br> 4.4 将下一个计算点的父结点设为当前计算点<br> 4.5 将计算点从openlist内移除<br> 4.6 循环4.1 - 4.5 直到将终点纳入计算点或openlist表为空为止</li>
+<li>注意点<br> 5.1 当多个点的f值一样的时候需要引入策略判断<br> 5.2 当不能直接找到下一个计算点的时候, 重新从openList里面去点需要策略判断(一般来说取f最小的)</li>
+<li>整的来说A星算法给需要设计寻路、搜索算法启示。 通俗一点类似找到走出迷宫的路径,<br> 首先需要简化搜索规则(比如不能穿墙, 不能翻墙, 不能破墙),<br> 然后确定搜索模型(比如能否将起点 路径 终点都对应到一个平面上)<br> 然后确定搜索策略(比如f(n) = g(n) + h(n))<br> 然后一步一步的确定每一个计算点(比如根据f值的大小取下一个计算点)<br> 然后循环搜索计算点的过程, 知道没有点可以搜索或者找到终点为止</li>
 </ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br></pre></td><td class="code"><pre><span class="line">-- 本demo方法只适用于起点终点的坐标都位于直角坐标系上的情况</span><br><span class="line">local AStarSearch = &#123;&#125;</span><br><span class="line"></span><br><span class="line">-- sPoint:起点 ePoint:终点</span><br><span class="line">-- barrierList: 障碍物表</span><br><span class="line">function AStarSearch:ctor(sPoint, ePoint, barrierList)</span><br><span class="line">	self.sPoint = sPoint</span><br><span class="line">	self.ePoint = ePoint</span><br><span class="line"></span><br><span class="line">	self.sPoint = self:newNode(sPoint, 0)</span><br><span class="line">	self.ePoint = self:newNode(ePoint, 0)</span><br><span class="line">	self.openList = &#123;&#125;</span><br><span class="line">	self.closedList = &#123;&#125;</span><br><span class="line">	for k,v in pairs(barrierList) do</span><br><span class="line">		self.closedList[v[1] .. &quot;_&quot; .. v[2]] = &#123;v[1], v[2]&#125;</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	self.openList[self.sPoint.name] = self.sPoint -- 将起点放入openList</span><br><span class="line">	self.resultNode = self:search(self.sPoint) -- 开始寻路, 并启用起点为第一个计算点</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 通过坐标和G值新建结点</span><br><span class="line">function AStarSearch:newNode(point, gValue)</span><br><span class="line">	if type(point) ~= &quot;table&quot; then </span><br><span class="line">		error(&quot;table expected got other&quot;)</span><br><span class="line">		return</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	local node = &#123;point[1], point[2]&#125;</span><br><span class="line">	node.g = gValue or 0 -- 起点到当前结点的难易程度</span><br><span class="line">	node.h = self:getManhatanDistance(node, self.ePoint) -- 当前结点到终点的曼哈顿距离</span><br><span class="line">	node.f = node.g + node.h -- 当前结点的参考值</span><br><span class="line">	node.name = string.format(&quot;%d_%d&quot;, point[1], point[2]) -- 当前结点的名字</span><br><span class="line">	node.sh = self:getManhatanDistance(node, self.sPoint) -- 当前结点到起点的曼哈顿距离</span><br><span class="line"></span><br><span class="line">	return node</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 获取曼哈顿距离</span><br><span class="line">function AStarSearch:getManhatanDistance(point1, point2)</span><br><span class="line">	return 10 * (math.abs(point1[1] - point2[1]) + math.abs(point1[2] - point2[2]))</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 找出计算点周围的下一个计算点</span><br><span class="line">function AStarSearch:getMinFNode(parseNode)</span><br><span class="line">	local minF = math.pow(2, 10) -- 最小的f值</span><br><span class="line">	local minFNode = nil -- 最小f的结点</span><br><span class="line">	local targetG = 0 -- 最小f值结点的g值</span><br><span class="line">	for i = -1, 1 do</span><br><span class="line">		for j = -1, 1 do</span><br><span class="line">			-- 计算点和不可越过/不参与计算的点 不参与比较f值</span><br><span class="line">			local nodeName = string.format(&quot;%d_%d&quot;, parseNode[1] + i, parseNode[2] + j)</span><br><span class="line">			if (i ~= 0 or j ~= 0) and not self.closedList[nodeName] then</span><br><span class="line">				-- print(&quot;getMinFNode &quot;, nodeName)</span><br><span class="line">				local tmpNode = self.openList[nodeName]</span><br><span class="line">				local tmpF = 0</span><br><span class="line">				if not tmpNode then</span><br><span class="line">					tmpNode = self:newNode(&#123;parseNode[1] + i, parseNode[2] + j&#125;, parseNode.g + 10)</span><br><span class="line">					tmpNode.parent = parseNode</span><br><span class="line">					targetG = tmpNode.g</span><br><span class="line">					tmpF = tmpNode.f</span><br><span class="line">				else </span><br><span class="line">					targetG = parseNode.g + 10</span><br><span class="line">					tmpF = targetG + tmpNode.h</span><br><span class="line">				end</span><br><span class="line"></span><br><span class="line">				-- 确定下一个计算的策略</span><br><span class="line">				-- f值最小 或 f值相等时h值最小 或 f值相等时sh最大</span><br><span class="line">				if tmpF &lt; minF then </span><br><span class="line">					minF = tmpF</span><br><span class="line">					minFNode = tmpNode</span><br><span class="line">				elseif tmpF == minF and (tmpNode.h &lt; minFNode.h or tmpNode.sh &gt; minFNode.sh) then </span><br><span class="line">					minF = tmpF</span><br><span class="line">					minFNode = tmpNode</span><br><span class="line">				end</span><br><span class="line">			end </span><br><span class="line">		end</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	if minFNode then </span><br><span class="line">		minFNode.g = targetG</span><br><span class="line">		minFNode.f = minF</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	return minFNode</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 搜索算法</span><br><span class="line">function AStarSearch:search(parseNode)</span><br><span class="line">	-- 搜索模型原理为</span><br><span class="line">	-- 将计算点周围x,y轴偏移量为1的结点纳入openList中</span><br><span class="line">	-- 找出计算点周围的点中f值最小的点为下一计算</span><br><span class="line">	-- 递归寻找下一个计算点, 直到找到终点或者openList里面没有点可计算为止</span><br><span class="line"></span><br><span class="line">	local minFNode = self:getMinFNode(parseNode)</span><br><span class="line">	-- print(&quot;search &quot;, parseNode.name, minFNode and minFNode.name)</span><br><span class="line">	-- 将当前计算点放入closedList里面</span><br><span class="line">	self.openList[parseNode.name] = nil</span><br><span class="line">	self.closedList[parseNode.name] = parseNode</span><br><span class="line"></span><br><span class="line">	if minFNode then -- 找到下一个计算点</span><br><span class="line">		minFNode.parent = parseNode</span><br><span class="line">		if minFNode.name ~= self.ePoint.name then </span><br><span class="line">			return self:search(minFNode)</span><br><span class="line">		else</span><br><span class="line">			return minFNode</span><br><span class="line">		end</span><br><span class="line">	else -- 没找到下一个计算点, 我这里随便挑了一个点, 理论上需要引入策略</span><br><span class="line">		local key,value = next(self.openList)</span><br><span class="line">		if key then </span><br><span class="line">			return self:search(value)</span><br><span class="line">		end</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	return false</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 返回路线的链表</span><br><span class="line">function AStarSearch:getResultNode()</span><br><span class="line">	return self.resultNode</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 从终点开始打印路线到起点来</span><br><span class="line">function AStarSearch:printPathToEnd()</span><br><span class="line">	local node = self.resultNode</span><br><span class="line">	if not node then </span><br><span class="line">		print(&quot;并没有搜索到路线&quot;)</span><br><span class="line">		return </span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	while(true) do</span><br><span class="line">		local parent = node.parent</span><br><span class="line">		print(node.name)</span><br><span class="line">		if parent then </span><br><span class="line">			node = parent</span><br><span class="line">		else</span><br><span class="line">			break</span><br><span class="line">		end</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 获取从起点到终点的路径</span><br><span class="line">function AStarSearch:getPathPoints()</span><br><span class="line">	local ret = &#123;&#125;</span><br><span class="line">	local node = self.resultNode</span><br><span class="line">	if not node then </span><br><span class="line">		print(&quot;并没有搜索到路线!&quot;)</span><br><span class="line">		return nil</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	while(true) do</span><br><span class="line">		local parent = node.parent</span><br><span class="line">		table.insert(node, 1, node)</span><br><span class="line">		if parent then </span><br><span class="line">			node = parent</span><br><span class="line">		else</span><br><span class="line">			break</span><br><span class="line">		end</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	return ret</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 开始测试</span><br><span class="line">-- 障碍物</span><br><span class="line">local barrierList = &#123;</span><br><span class="line">	&#123;3, 0&#125;, &#123;3,1&#125;, &#123;3,2&#125;,</span><br><span class="line">	&#123;3, -1&#125;, &#123;3, -2&#125;,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">local myAS = &#123;&#125;</span><br><span class="line">setmetatable(myAS, &#123;__index = AStarSearch&#125;)</span><br><span class="line">myAS:ctor(&#123;0, 0&#125;, &#123;5, 0&#125;, barrierList)</span><br><span class="line">myAS:printPathToEnd()</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<a href="https://blog.csdn.net/qq_36946274/article/details/81982691" title="参考自这里" target="_blank" rel="noopener"></a>
 
       
     </div>
@@ -425,8 +427,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/20/主页/" rel="next" title="主页">
-                <i class="fa fa-chevron-left"></i> 主页
+              <a href="/2019/12/30/最大堆学习/" rel="next" title="二叉堆学习之最大堆">
+                <i class="fa fa-chevron-left"></i> 二叉堆学习之最大堆
               </a>
             
           </div>
@@ -434,10 +436,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/06/20/hexo怎么添加本地搜索功能的笔记/" rel="prev" title="hexo怎么添加本地搜索功能">
-                hexo怎么添加本地搜索功能 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -468,7 +466,7 @@
         </li>
         <li class="post-copyright-link">
           <strong>本文链接：</strong>
-          <a href="/2019/06/20/关于hexo怎么建立分配和标签的笔记/" title="关于hexo怎么建立分配和标签的笔记">2019/06/20/关于hexo怎么建立分配和标签的笔记/</a>
+          <a href="/2020/01/04/A星算法学习笔记/" title="A星算法学习笔记">2020/01/04/A星算法学习笔记/</a>
         </li>
         <li class="post-copyright-license">
           <strong>版权： </strong>
@@ -766,9 +764,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2019/06/20/关于hexo怎么建立分配和标签的笔记/';
-          this.page.identifier = '2019/06/20/关于hexo怎么建立分配和标签的笔记/';
-          this.page.title = '关于hexo怎么建立分配和标签的笔记';
+          this.page.url = 'http://yoursite.com/2020/01/04/A星算法学习笔记/';
+          this.page.identifier = '2020/01/04/A星算法学习笔记/';
+          this.page.title = 'A星算法学习笔记';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://longma.disqus.com/embed.js';
