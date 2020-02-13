@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="顾名思义, 二叉树结构就是一个结点上面最多有两个子节点的树状数据结构. 节点有左右次序之分.树结构数据有一些专有名词: 来源 百度百科   结点层: 根结点的层定义为1, 根结点的孩子节点为2, 以此类推树的深度: 树中最大的结点层结点的度: 结点的子结点的个数树的度: 树中最大的结点度叶子结点: 也叫终端结点, 是度为0的结点分枝结点: 度不为0的结点有序树: 子树有序的树无序树: 不考虑子树的">
+<meta name="description" content="如何去解析一个算数表达式, 根据网上的解决方案, 用最基础的后缀表达式的方式实现.过程如下:  将中缀表达式(也就是常用的 a + b这一类将算数符号放在中间的) 转换为后缀表达式(ab+ 算数符号放在后面的) 计算后缀表达式  为什么采取后缀表达式，因为没有括号, 注意没有括号.先实现一个栈方法: 1234567891011121314151617181920212223242526272829">
 <meta name="keywords" content="笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="二叉树算法学习一">
-<meta property="og:url" content="http://yoursite.com/2019/12/25/二叉树算法学习一/index.html">
+<meta property="og:title" content="解析算数表达式">
+<meta property="og:url" content="http://yoursite.com/2020/02/13/解析算数表达式/index.html">
 <meta property="og:site_name" content="龙中之马的博客">
-<meta property="og:description" content="顾名思义, 二叉树结构就是一个结点上面最多有两个子节点的树状数据结构. 节点有左右次序之分.树结构数据有一些专有名词: 来源 百度百科   结点层: 根结点的层定义为1, 根结点的孩子节点为2, 以此类推树的深度: 树中最大的结点层结点的度: 结点的子结点的个数树的度: 树中最大的结点度叶子结点: 也叫终端结点, 是度为0的结点分枝结点: 度不为0的结点有序树: 子树有序的树无序树: 不考虑子树的">
+<meta property="og:description" content="如何去解析一个算数表达式, 根据网上的解决方案, 用最基础的后缀表达式的方式实现.过程如下:  将中缀表达式(也就是常用的 a + b这一类将算数符号放在中间的) 转换为后缀表达式(ab+ 算数符号放在后面的) 计算后缀表达式  为什么采取后缀表达式，因为没有括号, 注意没有括号.先实现一个栈方法: 1234567891011121314151617181920212223242526272829">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-25T14:22:27.336Z">
+<meta property="og:updated_time" content="2020-02-13T04:02:17.944Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="二叉树算法学习一">
-<meta name="twitter:description" content="顾名思义, 二叉树结构就是一个结点上面最多有两个子节点的树状数据结构. 节点有左右次序之分.树结构数据有一些专有名词: 来源 百度百科   结点层: 根结点的层定义为1, 根结点的孩子节点为2, 以此类推树的深度: 树中最大的结点层结点的度: 结点的子结点的个数树的度: 树中最大的结点度叶子结点: 也叫终端结点, 是度为0的结点分枝结点: 度不为0的结点有序树: 子树有序的树无序树: 不考虑子树的">
+<meta name="twitter:title" content="解析算数表达式">
+<meta name="twitter:description" content="如何去解析一个算数表达式, 根据网上的解决方案, 用最基础的后缀表达式的方式实现.过程如下:  将中缀表达式(也就是常用的 a + b这一类将算数符号放在中间的) 转换为后缀表达式(ab+ 算数符号放在后面的) 计算后缀表达式  为什么采取后缀表达式，因为没有括号, 注意没有括号.先实现一个栈方法: 1234567891011121314151617181920212223242526272829">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/12/25/二叉树算法学习一/">
+  <link rel="canonical" href="http://yoursite.com/2020/02/13/解析算数表达式/">
 
 
 
 
 
-  <title>二叉树算法学习一 | 龙中之马的博客</title>
+  <title>解析算数表达式 | 龙中之马的博客</title>
   
 
 
@@ -285,7 +285,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/25/二叉树算法学习一/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/13/解析算数表达式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="龙中之马">
@@ -302,7 +302,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">二叉树算法学习一</h1>
+          <h1 class="post-title" itemprop="name headline">解析算数表达式</h1>
         
 
         <div class="post-meta">
@@ -314,8 +314,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-25T20:34:13+08:00">
-                2019-12-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-13T11:51:42+08:00">
+                2020-02-13
               </time>
             
 
@@ -333,8 +333,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/12/25/二叉树算法学习一/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/12/25/二叉树算法学习一/" itemprop="commentCount"></span>
+                <a href="/2020/02/13/解析算数表达式/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/13/解析算数表达式/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -362,31 +362,24 @@
       
 
       
-        <p>顾名思义, 二叉树结构就是一个结点上面最多有两个子节点的树状数据结构. 节点有左右次序之分.<br>树结构数据有一些专有名词:</p>
-<a href="https://baike.baidu.com/item/二叉树/1602879?fr=aladdin" target="_blank" rel="noopener">来源 百度百科</a>
-
-
-<p>结点层: 根结点的层定义为1, 根结点的孩子节点为2, 以此类推<br>树的深度: 树中最大的结点层<br>结点的度: 结点的子结点的个数<br>树的度: 树中最大的结点度<br>叶子结点: 也叫终端结点, 是度为0的结点<br>分枝结点: 度不为0的结点<br>有序树: 子树有序的树<br>无序树: 不考虑子树的顺序</p>
-<p>二叉树的性质:</p>
+        <p>如何去解析一个算数表达式, 根据网上的解决方案, 用最基础的后缀表达式的方式实现.<br>过程如下:</p>
 <ol>
-<li>在非空二叉树中, 第i层的结点数不超过math.pow(2, i-1), i&gt;=1</li>
-<li>深度为h的二叉树最多有math.pow(2, h - 1)个结点, 最少有h个结点<br>(剩下的特性自己去百度看了…)</li>
+<li>将中缀表达式(也就是常用的 a + b这一类将算数符号放在中间的) 转换为后缀表达式(ab+ 算数符号放在后面的)</li>
+<li>计算后缀表达式</li>
 </ol>
-<p>二叉树结点的数据结构:<br>链表存储方式的结构, 不能直接拿到结点的数据, 需要一个一个的搜索</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">local bitNode = &#123;</span><br><span class="line">	data = xxx, -- 结点中存放的数据</span><br><span class="line">	lChild = bitNode, -- 左边子结点</span><br><span class="line">	rChild = bitNode, -- 右边子结点</span><br><span class="line">	parent = parent, -- 父结点(根结点的父结点为空)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>为什么采取后缀表达式，因为没有括号, 注意没有括号.<br>先实现一个栈方法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">local Stack = &#123;&#125;</span><br><span class="line">function Stack:new()</span><br><span class="line">	local ret = &#123;&#125;</span><br><span class="line">	setmetatable(ret, &#123;__index = self&#125;)</span><br><span class="line">	ret:ctor()</span><br><span class="line">	return ret</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function Stack:ctor()</span><br><span class="line">	self._length = 0</span><br><span class="line">	self._capacity = &#123;&#125;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function Stack:push(value)</span><br><span class="line">	self._length = self._length + 1</span><br><span class="line">	table.insert(self._capacity, value)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function Stack:isEmpty()</span><br><span class="line">	return self._length == 0</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function Stack:pop()</span><br><span class="line">	self._length = self._length - 1</span><br><span class="line">	return table.remove(self._capacity)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function Stack:remove()</span><br><span class="line">	self._length = self._length - 1</span><br><span class="line">	table.remove(self._capacity, self._length)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function Stack:front()</span><br><span class="line">	return self._capacity[self._length]</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function Stack:clear()</span><br><span class="line">	self._capacity = &#123;&#125;</span><br><span class="line">	self._length = 0</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function Stack:size()</span><br><span class="line">	return self._length</span><br><span class="line">end</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>递归生成二叉树数据的方法:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">-- bTree 生成的二叉树数据的table</span><br><span class="line">-- treeCount 需要生成深度为多少的二叉树</span><br><span class="line">function createBitNode(bTree, nodeCount, parent)</span><br><span class="line">	if nodeCount &gt; 0 then </span><br><span class="line">		bTree.data = nodeCount</span><br><span class="line">		bTree.lChild = &#123;&#125;</span><br><span class="line">		bTree.rChild = &#123;&#125;</span><br><span class="line">		bTree.parent = parent</span><br><span class="line">		createBitNode(bTree.lChild, nodeCount - 1, bTree)</span><br><span class="line">		createBitNode(bTree.rChild, nodeCount - 1, bTree)</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">local bTree = &#123;&#125;</span><br><span class="line">local nodeCount = 3</span><br><span class="line">createBitNode(bTree, nodeCount)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>再实现将中缀表达式转换为后缀表达式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br></pre></td><td class="code"><pre><span class="line">-- 将中缀表达式转为后缀表达式的方法</span><br><span class="line">local TransOper = &#123;&#125;</span><br><span class="line"></span><br><span class="line">function TransOper:new(...)</span><br><span class="line">	local ret = &#123;&#125;</span><br><span class="line">	setmetatable(ret, &#123;__index = self&#125;)</span><br><span class="line">	ret:ctor(...)</span><br><span class="line">	return ret</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function TransOper:ctor(str)</span><br><span class="line">	self.tranStr = str</span><br><span class="line">	self.myStack = Stack:new()</span><br><span class="line">	self.resultTab = &#123;&#125;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 开始将中缀表达式转为后缀表达式</span><br><span class="line">function TransOper:doTrans()</span><br><span class="line">	-- 将表达式分解为数字或运算符</span><br><span class="line">	local index = 1</span><br><span class="line">	local length = #self.tranStr</span><br><span class="line">	while(index &lt;= length) do</span><br><span class="line">		local startIndex, endIndex = self.tranStr:find(&quot;[%d%.]+&quot;, index)</span><br><span class="line">		if startIndex == index then </span><br><span class="line">			local str = self.tranStr:sub(startIndex, endIndex)</span><br><span class="line">			index = endIndex + 1</span><br><span class="line">			self:parseChar(str)</span><br><span class="line">		else</span><br><span class="line">			local startIndex, endIndex = self.tranStr:find(&quot;[%+%-%*%/%(%)]&quot;, index)</span><br><span class="line">			local str = self.tranStr:sub(startIndex, endIndex)</span><br><span class="line">			index = endIndex + 1</span><br><span class="line">			self:parseChar(str)</span><br><span class="line">		end</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	-- 如果栈里面还有运算符 那放再最后面</span><br><span class="line">	while(self.myStack:isEmpty() == false) do</span><br><span class="line">		local opTop = self.myStack:pop()</span><br><span class="line">		table.insert(self.resultTab, opTop)</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function TransOper:parseChar(str)</span><br><span class="line">	if str == &quot;+&quot; then </span><br><span class="line">		self:gotOper(str, 1)</span><br><span class="line">	elseif str == &quot;-&quot; then </span><br><span class="line">		self:gotOper(str, 1)</span><br><span class="line">	elseif str == &quot;*&quot; then </span><br><span class="line">		self:gotOper(str, 2)</span><br><span class="line">	elseif str == &quot;/&quot; then </span><br><span class="line">		self:gotOper(str, 2)</span><br><span class="line">	elseif str == &quot;(&quot; then </span><br><span class="line">		self.myStack:push(str)</span><br><span class="line">	elseif str == &quot;)&quot; then </span><br><span class="line">		self:getParent(str)</span><br><span class="line">	else</span><br><span class="line">		table.insert(self.resultTab, str)</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 处理操作</span><br><span class="line">function TransOper:gotOper(opThis, level)</span><br><span class="line">	while(self.myStack:isEmpty() == false) do</span><br><span class="line">		local opTop = self.myStack:pop()</span><br><span class="line">		if opTop == nil then </span><br><span class="line">			table.insert(self.myStack, opThis)</span><br><span class="line">			break</span><br><span class="line">		else</span><br><span class="line">			local preLevel = 0</span><br><span class="line">			if opTop == &quot;+&quot; or opTop == &quot;-&quot; then </span><br><span class="line">				preLevel = 1</span><br><span class="line">			elseif opTop == &quot;*&quot; or opTop == &quot;/&quot; then</span><br><span class="line">				preLevel = 2</span><br><span class="line">			end</span><br><span class="line"></span><br><span class="line">			if preLevel &lt; level then </span><br><span class="line">				self.myStack:push(opTop)</span><br><span class="line">				break</span><br><span class="line">			else</span><br><span class="line">				table.insert(self.resultTab, opTop)</span><br><span class="line">			end</span><br><span class="line">		end</span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	self.myStack:push(opThis)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function TransOper:getParent(opThis)</span><br><span class="line">	while(self.myStack:isEmpty() == false ) do</span><br><span class="line">		local opTop = self.myStack:pop()</span><br><span class="line">		if opTop == &quot;(&quot; then </span><br><span class="line">			break</span><br><span class="line">		else</span><br><span class="line">			table.insert(self.resultTab, opTop)</span><br><span class="line">		end</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function TransOper:getResult()</span><br><span class="line">	return table.concat(self.resultTab, &quot; &quot;)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function TransOper:getResultTab()</span><br><span class="line">	return self.resultTab</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 
-<p>一般来说, 遍历二叉树结构的方法有三种, 先序遍历(DLR), 中序遍历(LDR), 后序遍历<br>区别在于操作根节点的数据(data)的顺序<br>先序遍历:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function preTreeParse(bTree)</span><br><span class="line">	-- 这里只是用data字段是否有值来判断结点是否为空, 正常情况下用next(bTree)判断就好</span><br><span class="line">	if bTree.data then </span><br><span class="line">		print(bTree.data)</span><br><span class="line">		preTreeParse(bTree.lChild)</span><br><span class="line">		preTreeParse(bTree.rChild)</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">preTreeParse(bTree)</span><br></pre></td></tr></table></figure>
+<p>然后计算后缀表达式的结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">-- 计算后缀表达式的结果</span><br><span class="line">local ComputeStuffix = &#123;&#125;</span><br><span class="line">function ComputeStuffix:new(...)</span><br><span class="line">	local ret = &#123;&#125;</span><br><span class="line">	setmetatable(ret, &#123;__index = self&#125;)</span><br><span class="line">	ret:ctor(...)</span><br><span class="line">	return ret</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- tab: 用上面后缀解析方法解析出来的表达式</span><br><span class="line">function ComputeStuffix:ctor(tab)</span><br><span class="line">	self.expressionTab = tab</span><br><span class="line">	self.myStack = Stack:new()</span><br><span class="line">	self.baseSymbols = &#123;</span><br><span class="line">		[&quot;+&quot;] = true, </span><br><span class="line">		[&quot;-&quot;] = true, [&quot;*&quot;] = true, [&quot;/&quot;] = true</span><br><span class="line">	&#125;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 是否基础运算符</span><br><span class="line">function ComputeStuffix:isSymbol(symbol)</span><br><span class="line">	return self.baseSymbols[symbol]</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 开始计算</span><br><span class="line">function ComputeStuffix:doCompute()</span><br><span class="line">	for k,v in ipairs(self.expressionTab) do</span><br><span class="line">		if not self:isSymbol(v) then </span><br><span class="line">			self.myStack:push(v)</span><br><span class="line">		else</span><br><span class="line">			self:doOper(v)</span><br><span class="line">		end</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">-- 计算具体的运算符</span><br><span class="line">function ComputeStuffix:doOper(opThis)</span><br><span class="line">	if self.myStack:size() &lt;= 1 then </span><br><span class="line">		print(&quot;error your expressin is wrong!&quot;)</span><br><span class="line">		print(&quot;error your expressin is wrong!&quot;)</span><br><span class="line">		print(&quot;error your expressin is wrong!&quot;)</span><br><span class="line">		return </span><br><span class="line">	end</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">	local pop1 = tonumber(self.myStack:pop())</span><br><span class="line">	local pop2 = tonumber(self.myStack:pop())</span><br><span class="line">	local result = 0</span><br><span class="line">	if opThis == &quot;+&quot; then </span><br><span class="line">		result = pop2 + pop1</span><br><span class="line">	elseif opThis == &quot;-&quot; then</span><br><span class="line">		result = pop2 - pop1</span><br><span class="line">	elseif opThis == &quot;*&quot; then </span><br><span class="line">		result = pop2 * pop1</span><br><span class="line">	elseif opThis == &quot;/&quot; then </span><br><span class="line">		result = pop2 * pop1</span><br><span class="line">	end</span><br><span class="line">	self.myStack:push(result)</span><br><span class="line"></span><br><span class="line">	print(&quot;longma doOper &quot;, opThis, result)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function ComputeStuffix:getResult()</span><br><span class="line">	return self.myStack:pop()</span><br><span class="line">end</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>中序遍历:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function midTreeParse(bTree)</span><br><span class="line">	-- 这里只是用data字段是否有值来判断结点是否为空, 正常情况下用next(bTree)判断就好</span><br><span class="line">	if bTree.data then </span><br><span class="line">		midTreeParse(bTree.lChild)</span><br><span class="line">		print(bTree.data)</span><br><span class="line">		midTreeParse(bTree.rChild)</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">midTreeParse(bTree)</span><br></pre></td></tr></table></figure>
+<p>最后写个测试</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">local str = &quot;15 * (25 + 15) + 2222 - 34 * ( 22 - 11)&quot;</span><br><span class="line">str = str:gsub(&quot; &quot;, &quot;&quot;)</span><br><span class="line"></span><br><span class="line">-- 直接用Lua的load方法最快啦...</span><br><span class="line">local baseResult = load(&quot;return &quot; .. str)()</span><br><span class="line">local _transOper = TransOper:new(str)</span><br><span class="line">_transOper:doTrans()</span><br><span class="line">local out = _transOper:getResult()</span><br><span class="line">print(out)</span><br><span class="line"></span><br><span class="line">local compute = ComputeStuffix:new(_transOper:getResultTab())</span><br><span class="line">compute:doCompute()</span><br><span class="line">print(compute:getResult(), baseResult)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>后序遍历</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function lastTreeParse(bTree)</span><br><span class="line">	-- 这里只是用data字段是否有值来判断结点是否为空, 正常情况下用next(bTree)判断就好</span><br><span class="line">	if bTree.data then </span><br><span class="line">		lastTreeParse(bTree.lChild)</span><br><span class="line">		lastTreeParse(bTree.rChild)</span><br><span class="line">		print(bTree.data)</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">lastTreeParse(bTree)</span><br></pre></td></tr></table></figure>
-
+<a href="https://www.jianshu.com/p/dcf715a78f66" target="_blank" rel="noopener">参考自这位同学的简书</a>
       
     </div>
     
@@ -440,8 +433,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/12/25/webview不能播放视频和声音的问题分析/" rel="next" title="webview不能播放视频和声音的问题分析">
-                <i class="fa fa-chevron-left"></i> webview不能播放视频和声音的问题分析
+              <a href="/2020/01/04/A星算法学习笔记/" rel="next" title="A星算法学习笔记">
+                <i class="fa fa-chevron-left"></i> A星算法学习笔记
               </a>
             
           </div>
@@ -449,10 +442,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/12/30/最大堆学习/" rel="prev" title="二叉堆学习之最大堆">
-                二叉堆学习之最大堆 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -483,7 +472,7 @@
         </li>
         <li class="post-copyright-link">
           <strong>本文链接：</strong>
-          <a href="/2019/12/25/二叉树算法学习一/" title="二叉树算法学习一">2019/12/25/二叉树算法学习一/</a>
+          <a href="/2020/02/13/解析算数表达式/" title="解析算数表达式">2020/02/13/解析算数表达式/</a>
         </li>
         <li class="post-copyright-license">
           <strong>版权： </strong>
@@ -781,9 +770,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2019/12/25/二叉树算法学习一/';
-          this.page.identifier = '2019/12/25/二叉树算法学习一/';
-          this.page.title = '二叉树算法学习一';
+          this.page.url = 'http://yoursite.com/2020/02/13/解析算数表达式/';
+          this.page.identifier = '2020/02/13/解析算数表达式/';
+          this.page.title = '解析算数表达式';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://longma.disqus.com/embed.js';
